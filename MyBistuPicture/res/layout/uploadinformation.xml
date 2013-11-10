@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rectangle2"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title_bar" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle2"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所属分类:"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/sex"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/sex" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle2"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/suoshuxueyuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所属学院:"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/department"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/department" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle2"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/ruxueshijian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="入学时间:"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/entry"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/entry" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="照片名称" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="描述(选填)" />
+
+    <Button
+        android:id="@+id/startupload"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="开始上传" />
+
+</LinearLayout>

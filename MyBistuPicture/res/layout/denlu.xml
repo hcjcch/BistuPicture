@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/denglulinearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bitmap_book_read_chapterlist_repeat"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title_bar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户:"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkBok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="记住密码" />
+
+    <Button
+        android:id="@+id/startDengLu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select1"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="登录" />
+
+</LinearLayout>
